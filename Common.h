@@ -1,7 +1,7 @@
 /*
  * common.h
  *
- *  Created on: 2017Äê5ÔÂ28ÈÕ
+ *  Created on: 2017å¹´5æœˆ28æ—¥
  *      Author: LJ
  */
 
@@ -9,14 +9,14 @@
 #define COMMON_H_
 
 /*
- * ÎÄ¼şÒıÓÃ
+ * æ–‡ä»¶å¼•ç”¨
  */
 #include <stdio.h>
 #include <string.h>
 #include "stm8s.h"
 
 /********************************************************************/
-#define DEBUG                               1 /*¶¨Òåµ÷ÊÔÄ£Ê½*/
+#define DEBUG                               1 /*å®šä¹‰è°ƒè¯•æ¨¡å¼*/
 
 /********************************************************************/
 #ifndef uint8_t
@@ -32,25 +32,25 @@
 #endif
 
 /********************************************************************/
-#define POWER_ON							0x55	/*µ¥»ú¼Óµç*/
-#define POWER_OFF							0x00	/*µ¥»ú¶Ïµç*/
+#define POWER_ON                            0x55    /*å•æœºåŠ ç”µ*/
+#define POWER_OFF                           0x00    /*å•æœºæ–­ç”µ*/
 
-#define LIGHT_DOWN							0x00	/*µÆÃğ*/
-#define LIGHT_UP							0x55	/*µÆÁÁ*/
+#define LIGHT_DOWN                          0x00    /*ç¯ç­*/
+#define LIGHT_UP                            0x55    /*ç¯äº®*/
 
-#define DEACTIVE							0x00	/*¶¯×÷ÎŞĞ§*/
-#define ACTIVE								0x55	/*¶¯×÷ÓĞĞ§*/
+#define DEACTIVE                            0x00    /*åŠ¨ä½œæ— æ•ˆ*/
+#define ACTIVE                              0x55    /*åŠ¨ä½œæœ‰æ•ˆ*/
 
-#define UNLOCK								0x00	/*Î´Ëø¶¨*/
-#define LOCKED								0x55	/*Ëø¶¨*/
+#define UNLOCK                              0x00    /*æœªé”å®š*/
+#define LOCKED                              0x55    /*é”å®š*/
 
-#define UNAVAILABLE							0x00	/*²»¿ÉÓÃ*/
-#define AVAILABLE							0x55	/*¿ÉÓÃ*/
+#define UNAVAILABLE                         0x00    /*ä¸å¯ç”¨*/
+#define AVAILABLE                           0x55    /*å¯ç”¨*/
 
-#define INVALID								0x00	/*ÎŞĞ§*/
-#define VALID								0x55	/*ÓĞĞ§*/
+#define INVALID                             0x00    /*æ— æ•ˆ*/
+#define VALID                               0x55    /*æœ‰æ•ˆ*/
 
-#define IDLE								0x00	/*¿ÕÏĞ*/
-#define WORKING								0x55	/*¹¤×÷ÖĞ*/
+#define IDLE                                0x00    /*ç©ºé—²*/
+#define WORKING                             0x55    /*å·¥ä½œä¸­*/
 
 #endif /* COMMON_H_ */

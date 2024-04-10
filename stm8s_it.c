@@ -230,7 +230,7 @@ INTERRUPT_HANDLER(TIM1_UPD_OVF_TRG_BRK_IRQHandler, 11)
 {
   /* In order to detect unexpected events during development,
      it is recommended to set a breakpoint on the following instruction.
-  */	
+  */    
 }
 
 /**
@@ -285,7 +285,7 @@ INTERRUPT_HANDLER(TIM1_CAP_COM_IRQHandler, 12)
      it is recommended to set a breakpoint on the following instruction.
   */
     TIM2_ClearITPendingBit(TIM2_IT_UPDATE);
-	TIM2_ITConfig(TIM2_IT_UPDATE,DISABLE);
+    TIM2_ITConfig(TIM2_IT_UPDATE,DISABLE);
     
     SoftUart_Handler();
     GPIO_WriteReverse(GPIOD,GPIO_PIN_2);
